@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Setup file with s3 locations
+setup.R
+
+# csv files
+*.csv
