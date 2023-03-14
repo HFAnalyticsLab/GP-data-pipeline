@@ -41,5 +41,6 @@ vignettes/*.pdf
 # Setup file with s3 locations
 setup.R
 
-# csv files
+# downloaded files
 *.csv
+*.xlsx
