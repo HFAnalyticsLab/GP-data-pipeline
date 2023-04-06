@@ -22,11 +22,12 @@ app_data <- lapply( ## read into a list
 ) %>% 
   rbindlist()
 
-get_bucket(p_bucket, ## get work file paths (which one to use?)
+get_bucket(p_bucket, 
            prefix = 'GP_data/jan_23/work') %>%
   rbindlist() %>%
   select(Key) -> work_files
 
+## use most recent file 
 work_data <- lapply( ## read into a list
   work_files$Key,
   function(f) {
