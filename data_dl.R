@@ -43,7 +43,7 @@ for (i in to_move){
   }
 
 paste0(work, '31-january-2023') %>%
-  return_links(.) %>%
+  return_links(.) %>% ## function change
   grep('Practice', ., value = TRUE) %>%
   download.file(., destfile = 'work.zip', method = 'libcurl')
 
